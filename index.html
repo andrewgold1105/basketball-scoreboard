@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basketball Scoreboard</title>
+   <link rel="shortcut icon" href="/simple calculator/ball.jpeg" type="image/x-icon">
+   <link rel="stylesheet" href="https://www.fontspace.com/cursed-timer-ulil-font-f29411">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- main section -->
+    <div id="main">
+        <h1>Basketball Scoreboard</h1>
+       <div id="quarter-display">
+            <p>QUARTER:  
+                <span id="quarter">
+                    3 
+                </span>
+            </p>
+            <button onclick="nextQuater()">Next Quarter</button>
+            <button onclick="resetnextQuater()">Reset</button>
+       </div>
+
+       <!-- Hero Section -->
+        <div class="hero">
+            <div class="wrapper"> 
+                <h1>HOME</h1>
+                <div class="score" id="home">0</div>
+                <div id="wrapper-btn">
+                    <button id="btn-1" onclick="add1()">+1</button>
+                    <button id="btn-2" onclick="add2()">+2</button>
+                    <button id="btn-3" onclick="add3()">+3</button>
+                    <button onclick="homereset()">Reset</button>
+                </div>
+                <div id="foul">
+                    <p>Foul: <span id="home-foul">0</span></p>
+                    <button onclick="addhomeFoul()">Foul</button>
+                    <button onclick="resethomeFoul()">Reset Foul</button>
+                </div>
+            </div>
+            <div class="wrapper">
+                <h1>GUEST</h1>
+                <div class="score" id="guest">0</div>
+                <div id="wrapper-btn">
+                    <button id="btn-1" onclick="addGuest1()">+1</button>
+                    <button id="btn-2" onclick="addGuest2()">+2</button>
+                    <button id="btn-3" onclick="addGuest3()">+3</button>
+                    <button onclick="guestreset()">Reset</button>
+                </div>
+                <div id="foul">
+                    <p>Foul: <span id="guest-foul">0</span></p>
+                    <button onclick="addguestFoul()">Foul</button>
+                    <button onclick="resetguestFoul()">Reset Foul</button>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="index.js"></script>
+</body>
+</html>
